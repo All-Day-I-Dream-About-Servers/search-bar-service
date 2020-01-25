@@ -12,4 +12,4 @@ const shoeSchema = mongoose.Schema({
 
 var Shoe = mongoose.model('shoes', shoeSchema);
 
-module.exprots = Shoe;
+module.exports = Shoe;
