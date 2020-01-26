@@ -684,15 +684,6 @@
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/streetball_shoes_earth_m.png"
   },
   {
-    "sku": 76,
-    "name": "Streetball Shoes",
-    "color": "Flash Orange",
-    "categories": ["Mens", "Original", "Basketball"],
-    "price": 110,
-    "sale": 0,
-    "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/streetball_shoes_flash_orange_m.png"
-  },
-  {
     "sku": 77,
     "name": "Streetball Shoes",
     "color": "Savannah",
@@ -907,5 +898,14 @@
     "price": 155,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/x_19_firm_ground_cleats.png"
+  },
+  {
+    "sku": 101,
+    "name": "Streetball Shoes",
+    "color": "Flash Orange",
+    "categories": ["Mens", "Original", "Basketball"],
+    "price": 110,
+    "sale": 0,
+    "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/streetball_shoes_flash_orange_m.png"
   }
 ]
