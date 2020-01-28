@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from './navbar.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,7 +10,11 @@ class App extends React.Component {
   render() {
     return(
       <div>
-        <h1>Hello from App Component!</h1>
+        <div className="navBack">
+          <Navbar />
+        </div>
+        {/* <p></p>
+        <h1>Hello from App Component!</h1> */}
       </div>
     );
   };
