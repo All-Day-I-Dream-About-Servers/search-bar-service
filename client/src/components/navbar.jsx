@@ -1,12 +1,15 @@
 import React from 'react';
+import Navmen from './navmen.jsx';
 
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showcart: false
+      showcart: false,
+      menlink: true
     };
     this.showcart = this.showcart.bind(this);
+    this.toggle = this.toggle.bind(this);
   }
 
   showcart() {
@@ -14,8 +17,15 @@ class Navbar extends React.Component {
       showcart: !this.state.showcart
     });
   }
+  toggle() {
+    this.setState({
+      menlink: !this.state.menlink
+    });
+  } 
 
   render() {
+
+    // var linkcolor = this.state.menlink ? "menulinkhovered":"menlink"
 
     return(
       <nav className="navbar">
@@ -33,15 +43,29 @@ class Navbar extends React.Component {
               <a href="#">| &nbsp;CREATORS CLUB &nbsp;| &nbsp;</a>
               <a href="#">&nbsp; </a>
               <a href="#">LOG IN </a></span>
-
             </div>
           </div>
           <div className="navbottom">
-            <a className="menulink" href="#">MEN </a>
-            <a className="menulink" href="#">WOMEN </a>
-            <a className="menulink" href="#">KIDS | </a>
-            <a className="menulink" href="#">SPORTS BRANDS | </a>
-            <a className="menulink" href="#">RELEASE DATES</a>
+            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav1()} onMouseLeave={() => this.props.showNav1()}>
+              <a className="menulink" href="#">MEN</a>
+            </div>
+            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav2()} onMouseLeave={() => this.props.showNav2()}>
+              <a className="menulink" href="#">WOMEN</a>
+            </div>
+            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav3()} onMouseLeave={() => this.props.showNav3()}>
+              <a className="menulink" href="#">KIDS</a>
+            </div>
+            <a className="line" href="#">| </a>
+            <div className="menulinkcontainer">
+              <a className="menulink" href="#">SPORTS</a>
+            </div>
+            <div className="menulinkcontainer">
+              <a className="menulink" href="#">BRANDS</a>
+            </div>
+            <a className="line" href="#">| </a>
+            <div className="menulinkcontainer">
+              <a className="menulink" href="#">RELEASE DATES</a>
+            </div>
             <div className="menusearch">
               <form>
                 <input type="text" className="searchbar" placeholder="Search"></input>
@@ -56,7 +80,6 @@ class Navbar extends React.Component {
             </div>
           </div>
           ) : null }
-
         </div>
       </nav>
     )
