@@ -25,9 +25,15 @@ class Navbar extends React.Component {
         <div className="mainmenu">
           <div className="navtop">
             <div className="toplinks">
-              <a href="#">Item 1</a>
-              <a href="#">Item 2</a>
-              <a href="#">Item 3</a>
+              <a href="#">ALSO VISIT &nbsp;</a>
+              <img className="reeboklogo" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/reebok.png"></img>
+              <span className="helplinks"><a href="#">HELP &nbsp;| &nbsp;</a>
+              <a href="#">ORDER TRACKER AND RETURNS &nbsp;|</a>
+              <a className="join" href="#"> &nbsp;JOIN CREATORS CLUB &nbsp; </a>
+              <a href="#">| &nbsp;CREATORS CLUB &nbsp;| &nbsp;</a>
+              <a href="#">&nbsp; </a>
+              <a href="#">LOG IN </a></span>
+
             </div>
           </div>
           <div className="navbottom">
@@ -46,7 +52,7 @@ class Navbar extends React.Component {
           {this.state.showcart ? (
           <div className="emptycartcontainer">
             <div className="emptycart">
-              <h3>YOUR BAG IS EMPTY</h3>
+              <img className="cartimg" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/Screen+Shot+2020-01-28+at+4.01.40+PM.png"></img>
             </div>
           </div>
           ) : null }
