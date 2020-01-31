@@ -105,6 +105,14 @@ class Navwomen extends React.Component {
               </ul>
             </div>
           </div>
+          <div className="bottomtextcontainer">
+            <p className="bottomtext"></p>
+            <p className="bottomtext">All Women's Shoes</p>
+            <p className="bottomtext">All Women's Clothing</p>
+            <p className="bottomtext">All Women's Accessories</p>
+            <p className="bottomtext">All Women's Sale</p>
+            <p className="bottomtext"></p>
+          </div>
         </div>
       </div>
     )

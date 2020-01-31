@@ -71,6 +71,14 @@ class Navkids extends React.Component {
               {/* <h3 className="title">COLLECTIONS</h3> */}
             </div>
           </div>
+          <div className="bottomtextcontainer">
+            <p className="bottomtext"></p>
+            <p className="bottomtext">All Youth</p>
+            <p className="bottomtext">All Children</p>
+            <p className="bottomtext">All Baby & Toddler</p>
+            <p className="bottomtext">All Kid's Sale</p>
+            <p className="bottomtext"></p>
+          </div>
         </div>
       </div>
     )

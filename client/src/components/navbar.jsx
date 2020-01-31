@@ -56,10 +56,10 @@ class Navbar extends React.Component {
               <a className="menulink" href="#">KIDS</a>
             </div>
             <a className="line" href="#">| </a>
-            <div className="menulinkcontainer">
+            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav4()} onMouseLeave={() => this.props.showNav4()}>
               <a className="menulink" href="#">SPORTS</a>
             </div>
-            <div className="menulinkcontainer">
+            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav5()} onMouseLeave={() => this.props.showNav5()}>
               <a className="menulink" href="#">BRANDS</a>
             </div>
             <a className="line" href="#">| </a>

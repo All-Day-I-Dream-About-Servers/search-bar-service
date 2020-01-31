@@ -106,6 +106,14 @@ class Navmen extends React.Component {
               </ul>
             </div>
           </div>
+          <div className="bottomtextcontainer">
+            <p className="bottomtext"></p>
+            <p className="bottomtext">All Men's Shoes</p>
+            <p className="bottomtext">All Men's Clothing</p>
+            <p className="bottomtext">All Men's Accessories</p>
+            <p className="bottomtext">All Men's Sale</p>
+            <p className="bottomtext"></p>
+          </div>
         </div>
       </div>
     )
