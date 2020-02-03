@@ -97,6 +97,10 @@
   margin-right: 80px;
   margin-top: -42px;
 }
+.searchcontainer {
+  text-align: right;
+  margin-bottom: 8px;
+}
 .searchbar {
   height: 33px;
   width: 150px;
@@ -112,6 +116,18 @@
 }
 .searchbar:focus {
   width: 225px;
+}
+.searchbar::-webkit-search-cancel-button {
+  position: relative;
+  right: 20px;  
+
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background-image: url('https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/x.png');
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .cartlink {
   margin-right: 15px;
@@ -149,6 +165,7 @@
   margin-left: 339px;
   margin-top: -40px;
   background-color: white;
+  color: black;
   width: 33px;
   height: 40px;
   padding-top: 12px;
@@ -192,6 +209,8 @@
 .menulinkblack {
   z-index: 3;
   text-decoration: none;
+  background-color: white;
+  color: black;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 100;
 }
@@ -298,4 +317,83 @@
   font-size: 13px;
   color: black;
   font-weight: bolder;
+}
+.resultsContainer {
+  width: 630px;
+  height: 470px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.8rem;
+  z-index: 1;
+  padding-top: 20px;
+  padding-left: 20px;
+  -webkit-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
+}
+.shoedescription {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+}
+.resultsImage {
+  width: 90px;
+  height: 90px;
+}
+.shoecategories {
+  letter-spacing: 0.8em;
+  color: grey;
+}
+.shoeName {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+  overflow-wrap: normal;
+}
+.resultsContainer p {
+  vertical-align: top;
+  letter-spacing: 0.08em;
+  overflow-wrap: normal;
+}
+.inner {
+  width: 305px;
+  height: 410px;
+}
+.inner h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+.innerleft {
+  flex-shrink: 1;
+}
+.seeall {
+  vertical-align: bottom;
+  text-decoration: underline;
+}
+.innerright {
+  flex-grow: 2;
+  overflow: hidden;
+}
+.innerright h2 {
+  letter-spacing: 0.1em;
+}
+.oneShoe {
+  margin-bottom: 5px;
+}
+.suggestions {
+  padding: 10px 20px 0 0;
+}
+.suggestionsrow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+  letter-spacing: -2px;
+}
+.suggestions p:nth-child(2n) {
+  color: grey;
+  font-size: 0.85rem;
+}
+.searchterm {
+  font-weight: bold;
 }

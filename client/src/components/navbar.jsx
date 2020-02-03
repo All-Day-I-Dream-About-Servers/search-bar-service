@@ -6,10 +6,13 @@ class Navbar extends React.Component {
     super(props);
     this.state = {
       showcart: false,
-      menlink: true
+      menlink: true,
+      navmen: true,
+      nav1: this.props.hidenav1
     };
     this.showcart = this.showcart.bind(this);
     this.toggle = this.toggle.bind(this);
+    this.hidenavmen = this.hidenavmen.bind(this);
   }
 
   showcart() {
@@ -21,7 +24,12 @@ class Navbar extends React.Component {
     this.setState({
       menlink: !this.state.menlink
     });
-  } 
+  }
+  hidenavmen() {
+    this.setState({
+      navmen: !this.state.navmen
+    });
+  }
 
   render() {
 
@@ -47,7 +55,9 @@ class Navbar extends React.Component {
           </div>
           <div className="navbottom">
             <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav1()} onMouseLeave={() => this.props.showNav1()}>
-              <a className="menulink" href="#">MEN</a>
+              {this.state.nav1 ? (
+                <a className="menulink" href="#">MEN</a>
+              ) : null}
             </div>
             <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav2()} onMouseLeave={() => this.props.showNav2()}>
               <a className="menulink" href="#">WOMEN</a>

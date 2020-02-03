@@ -11,6 +11,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       nav1: false,
+      hidenav1: true,
       nav2: false,
       nav3: false,
       nav4: false,
@@ -24,7 +25,8 @@ class App extends React.Component {
   };
   showNav1() {
     this.setState({
-      nav1: !this.state.nav1
+      nav1: !this.state.nav1,
+      hidenav1: !this.state.hidenav1
     });
   }
   showNav2() {
@@ -54,6 +56,7 @@ class App extends React.Component {
         <div className="navBack">
           <Navbar 
           nav1={this.state.nav1} 
+          hidenav1={this.state.hidenav1}
           showNav1={this.showNav1}
           showNav2={this.showNav2}
           showNav3={this.showNav3}

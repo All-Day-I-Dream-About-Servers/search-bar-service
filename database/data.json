@@ -3,7 +3,7 @@
     "sku": 1,
     "name": "3MC Shoes",
     "color": "red",
-    "categories": ["Womens", "Mens", "Original"],
+    "categories": ["Womens", "Original"],
     "price": 65,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/3mc_choes_red_w.png"
@@ -12,7 +12,7 @@
     "sku": 2,
     "name": "3MC Shoes",
     "color": "Purple",
-    "categories": ["Womens", "Mens", "Original"],
+    "categories": ["Mens", "Original"],
     "price": 65,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/3mc_shoes_purple_w.png"
@@ -21,7 +21,7 @@
     "sku": "3",
     "name": "Adiease Shoes",
     "color": "Green",
-    "categories": ["Womens", "Mens", "Original"],
+    "categories": ["Womens", "Original"],
     "price": 60,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/adiease_shoes_green_m.png"
@@ -29,7 +29,7 @@
   {
     "sku": 4,
     "name": "Adilette 3.0 Sandals",
-    "color": "Black",
+    "color": "Green",
     "categories": ["Mens", "Sandals"],
     "price": 60,
     "sale": 0,
@@ -51,7 +51,7 @@
     "categories": ["Mens", "Sandals"],
     "price": 70,
     "sale": 50,
-    "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/adiease_shoes_green_m.png"
+    "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/adilette_cloudfoam_slides_black_m.png"
   },
   {
     "sku": 7,
@@ -93,7 +93,7 @@
     "sku": 11,
     "name": "Adizero Ubersonic 2.0",
     "color": "Orange Grey",
-    "categories": ["Mens, Tennis"],
+    "categories": ["Mens", "Tennis"],
     "price": 130,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/adizero_ubersonic_2.0_shoes_orange_grey_m.png"
@@ -145,7 +145,7 @@
   },
   {
     "sku": 17,
-    "name": "Comfor Sandals",
+    "name": "Comfort Sandals",
     "color": "Black Orange",
     "categories": ["Kids", "Sandals"],
     "price": 30,
@@ -183,7 +183,7 @@
     "sku": 21,
     "name": "Copa 20.1 Firm Ground Cleats",
     "color": "Red",
-    "categories": ["Male", "Cleats", "Soccer"],
+    "categories": ["Mens", "Cleats", "Soccer"],
     "price": 120,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/copa_20.1_firm_ground_cleats_red_m.png"
@@ -192,7 +192,7 @@
     "sku": 22,
     "name": "Copa 20.1 Turf Shoes",
     "color": "Red",
-    "categories": ["Male", "Cleats", "Soccer"],
+    "categories": ["Mens", "Cleats", "Soccer"],
     "price": 120,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/copa_20.1_turf_shoes_red_m.png"
@@ -201,7 +201,7 @@
     "sku": 23,
     "name": "Disney Mickey Mouse Stan Smith",
     "color": "White",
-    "categories": ["Male", "Disney"],
+    "categories": ["Mens", "Disney"],
     "price": 120,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/disney_mickey_mouse_stan_smith_white_m.png"
@@ -210,7 +210,7 @@
     "sku": 24,
     "name": "Disney Mickey Mouse Superstar",
     "color": "White",
-    "categories": ["Male", "Disney"],
+    "categories": ["Mens", "Disney"],
     "price": 120,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/disney_mickey_mouse_superstar_white_m.png"
@@ -264,7 +264,7 @@
     "sku": 30,
     "name": "Five Ten Dragon Shoes",
     "color": "Orange",
-    "categories": ["Male", "Climbing", "Outdoor"],
+    "categories": ["Mens", "Climbing", "Outdoor"],
     "price": 160,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/five_ten_dragon_shoes_orange_m.png"
@@ -273,7 +273,7 @@
     "sku": 31,
     "name": "Five Ten Gym Master Climbing",
     "color": "Red",
-    "categories": ["Male", "Climbing", "Outdoor", "Training"],
+    "categories": ["Mens", "Climbing", "Outdoor", "Training"],
     "price": 160,
     "sale": 30,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/five_ten_dragon_shoes_orange_m.png"
@@ -282,7 +282,7 @@
     "sku": 32,
     "name": "Five Ten Hi Angle Climbing",
     "color": "Black",
-    "categories": ["Male", "Climbing", "Outdoor"],
+    "categories": ["Mens", "Climbing", "Outdoor"],
     "price": 150,
     "sale": 30,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/five_ten_hiangle_climbing_black_m.png"
@@ -291,7 +291,7 @@
     "sku": 33,
     "name": "Five Ten Sleuth Slipon Mountain",
     "color": "Orange",
-    "categories": ["Male", "Outdoor"],
+    "categories": ["Mens", "Outdoor"],
     "price": 70,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/five_ten_sleuth_slipon_mountain_m.png"
@@ -336,7 +336,7 @@
     "sku": 38,
     "name": "Freak Mid Molded Cleats",
     "color": "Gold",
-    "categories": ["Male", "Football", "Cleats"],
+    "categories": ["Mens", "Football", "Cleats"],
     "price": 90,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/freak_mid_molded_cleats_gold_k.png"
@@ -354,7 +354,7 @@
     "sku": 40,
     "name": "Harden Vol 4 Shoes",
     "color": "Black",
-    "categories": ["Male", "Basketball"],
+    "categories": ["Mens", "Basketball"],
     "price": 130,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/harden_vol_4_shoe_bubblegum_m.png"
@@ -363,7 +363,7 @@
     "sku": 41,
     "name": "Harden Vol 4 Shoes",
     "color": "Camo",
-    "categories": ["Male", "Basketball"],
+    "categories": ["Mens", "Basketball"],
     "price": 130,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/harden_vol_4_shoes_camo_m.png"
@@ -372,7 +372,7 @@
     "sku": 42,
     "name": "Harden Vol 4 Shoes",
     "color": "Mint",
-    "categories": ["Male", "Basketball"],
+    "categories": ["Mens", "Basketball"],
     "price": 130,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/harden_vol_4_shoes_mint_m.png"
@@ -381,7 +381,7 @@
     "sku": 43,
     "name": "Harden Vol 4 Shoes",
     "color": "Red Black",
-    "categories": ["Male", "Basketball"],
+    "categories": ["Mens", "Basketball"],
     "price": 130,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/harden_vol_4_shoes_red_black_m.png"
