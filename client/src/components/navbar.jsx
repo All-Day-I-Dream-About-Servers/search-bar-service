@@ -1,5 +1,5 @@
 import React from 'react';
-import Navmen from './navmen.jsx';
+import Search from './search.jsx';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -67,9 +67,7 @@ class Navbar extends React.Component {
               <a className="menulink" href="#">RELEASE DATES</a>
             </div>
             <div className="menusearch">
-              <form>
-                <input type="text" className="searchbar" placeholder="Search"></input>
-              </form>
+              <Search />
               <a className="cartlink" href="#" onMouseEnter={() => this.showcart()} onMouseLeave={() => this.showcart()}><img className="shoppingcart" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/cart.png"></img></a>
             </div>
           </div>

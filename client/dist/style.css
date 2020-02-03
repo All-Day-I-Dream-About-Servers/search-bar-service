@@ -100,13 +100,18 @@
 .searchbar {
   height: 33px;
   width: 150px;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
   background-image: url('https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/searchicon.png');
   background-position: 1px center;
   background-repeat: no-repeat;
-  background-size: 18%;
+  background-size: 20px;
   text-indent: 30px;
-  font-size: 15px;
+  font-size: 0.4rem;
   border: none;
+}
+.searchbar:focus {
+  width: 225px;
 }
 .cartlink {
   margin-right: 15px;
