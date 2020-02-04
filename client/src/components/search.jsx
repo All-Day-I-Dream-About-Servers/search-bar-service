@@ -148,7 +148,14 @@ export default class Search extends React.Component {
                     <div className="shoedescription">
                       <p className="shoecategories">{shoe.categories[0]}</p>
                       <p className="shoeName">{shoe.name}</p>
-                      <p className="shoeprice">${shoe.price}</p>
+                      <p className="shoeprice">
+                        {shoe.sale > 0 ? (
+                          <span>
+                            <span className="saleprice">${(shoe.price - (shoe.price * (shoe.sale * 0.01)))} </span>
+                            <span className="slashprice">${shoe.price}</span>
+                          </span>
+                        ) : `$${shoe.price}`}
+                      </p>
                     </div>
                   </div>
               })}

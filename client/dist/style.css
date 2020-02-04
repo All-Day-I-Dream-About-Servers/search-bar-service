@@ -8,6 +8,9 @@
   background-color: black;
   padding: 10px 45px 15px 140px
 }
+#navbar {
+  transition: top 0.5s;
+}
 .navbar {
   display: flex;
   justify-content: flex-start;
@@ -16,7 +19,6 @@
 .logo {
   margin-left: 100px;
   max-width: 75px;
-  filter: invert();
 }
 .mainmenu {
   width: 100%;
@@ -68,6 +70,8 @@
   padding-right: 70px;
 }
 .menulinkcontainer {
+  position: relative;
+  z-index: 2;
   display: inline-block;
   position: relative;
   height: 28px;
@@ -75,14 +79,19 @@
   margin-right: 5px;
 }
 .menulink {
+  position: relative;
+  z-index: 2;
   text-decoration: none;
   color: white;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 100;
 }
-.menulinkhovered {
+.menulinkcontainer:hover .menulink {
+  color: black
+}
+.release {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 100;
 }
@@ -160,7 +169,12 @@
   margin-left: 60px;
   width: 60%;
 }
+/* .expandedcontainer {
+  position: relative;
+  z-index: 3;
+} */
 .titlemen {
+  /* position: relative; */
   z-index: 2;
   margin-left: 339px;
   margin-top: -40px;
@@ -171,7 +185,7 @@
   padding-top: 12px;
 }
 .titlewomen {
-  z-index: 2;
+  /* z-index: 2; */
   margin-left: 377px;
   margin-top: -40px;
   background-color: white;
@@ -180,7 +194,7 @@
   padding-top: 12px;
 }
 .titlekids {
-  z-index: 2;
+  /* z-index: 2; */
   margin-left: 442px;
   margin-top: -40px;
   background-color: white;
@@ -189,7 +203,7 @@
   padding-top: 12px;
 }
 .titlesports {
-  z-index: 2;
+  /* z-index: 2; */
   margin-left: 492px;
   margin-top: -40px;
   background-color: white;
@@ -198,7 +212,7 @@
   padding-top: 12px;
 }
 .titlebrands {
-  z-index: 2;
+  /* z-index: 2; */
   margin-left: 555px;
   margin-top: -40px;
   background-color: white;
@@ -207,9 +221,7 @@
   padding-top: 12px;
 }
 .menulinkblack {
-  z-index: 3;
   text-decoration: none;
-  background-color: white;
   color: black;
   font-family: 'Maven Pro', sans-serif;
   font-weight: 100;
@@ -319,6 +331,7 @@
   font-weight: bolder;
 }
 .resultsContainer {
+  position: relative;
   width: 630px;
   height: 470px;
   background-color: white;
@@ -348,9 +361,12 @@
 }
 .shoeName {
   display: inline-block;
+  width: 200px;
   vertical-align: top;
   font-weight: bold;
-  overflow-wrap: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .resultsContainer p {
   vertical-align: top;
@@ -364,19 +380,25 @@
 .inner h2 {
   font-family: 'Open Sans', sans-serif;
 }
-.innerleft {
-  flex-shrink: 1;
-}
 .seeall {
+  font-weight: bolder;
   vertical-align: bottom;
   text-decoration: underline;
 }
 .innerright {
-  flex-grow: 2;
-  overflow: hidden;
+  flex-shrink: 1;
+  overflow-y: hidden;
 }
 .innerright h2 {
   letter-spacing: 0.1em;
+}
+.saleprice {
+  color: red;
+}
+.slashprice {
+  color: grey;
+  text-decoration: line-through;
+  text-decoration-color: grey;
 }
 .oneShoe {
   margin-bottom: 5px;

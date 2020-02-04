@@ -3,7 +3,7 @@
     "sku": 1,
     "name": "3MC Shoes",
     "color": "red",
-    "categories": ["Womens", "Original"],
+    "categories": ["Mens", "Original"],
     "price": 65,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/3mc_choes_red_w.png"

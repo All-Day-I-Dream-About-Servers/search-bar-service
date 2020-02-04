@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './navbar.jsx';
+import MainNavbar from './navbar.jsx';
 import Navmen from './navmen.jsx';
 import Navwomen from './navwomen.jsx';
 import Navkids from './navkids.jsx';
@@ -11,7 +11,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       nav1: false,
-      hidenav1: true,
       nav2: false,
       nav3: false,
       nav4: false,
@@ -22,50 +21,80 @@ class App extends React.Component {
     this.showNav3 = this.showNav3.bind(this);
     this.showNav4 = this.showNav4.bind(this);
     this.showNav5 = this.showNav5.bind(this);
-  };
+    this.hideAll = this.hideAll.bind(this);
+  }
   showNav1() {
     this.setState({
-      nav1: !this.state.nav1,
-      hidenav1: !this.state.hidenav1
+      nav1: true,
+      nav2: false,
+      nav3: false,
+      nav4: false,
+      nav5: false
     });
   }
   showNav2() {
     this.setState({
-      nav2: !this.state.nav2
+      nav1: false,
+      nav2: !this.state.nav2,
+      nav3: false,
+      nav4: false,
+      nav5: false
     });
   }
   showNav3() {
     this.setState({
-      nav3: !this.state.nav3
+      nav1: false,
+      nav2: false,
+      nav3: !this.state.nav3,
+      nav4: false,
+      nav5: false
     });
   }
   showNav4() {
     this.setState({
-      nav4: !this.state.nav4
+      nav1: false,
+      nav2: false,
+      nav3: false,
+      nav4: !this.state.nav4,
+      nav5: false
     });
   }
   showNav5() {
     this.setState({
+      nav1: false,
+      nav2: false,
+      nav3: false,
+      nav4: false,
       nav5: !this.state.nav5
     });
   }
+  hideAll() {
+    this.setState({
+      nav1: false,
+      nav2: false,
+      nav3: false,
+      nav4: false,
+      nav5: false
+    });
+  }
+
 
   render() {
     return(
       <div>
-        <div className="navBack">
-          <Navbar 
+        <div id="navbar" className="navBack" onMouseEnter={this.hideAll}>
+          <MainNavbar 
           nav1={this.state.nav1} 
-          hidenav1={this.state.hidenav1}
           showNav1={this.showNav1}
           showNav2={this.showNav2}
           showNav3={this.showNav3}
           showNav4={this.showNav4}
           showNav5={this.showNav5}
+          hideAll={this.hideAll}
           />
         </div>
         {this.state.nav1 ? (
-          <Navmen />
+          <Navmen keepNav1={this.showNav1}/>
         ): null}
         {this.state.nav2 ? (
           <Navwomen />
