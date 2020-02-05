@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
+const favicon = require('serve-favicon');
 const path = require('path');
 const router = require('./router.js');
 
@@ -15,5 +16,6 @@ app.use(morgan('dev'));
 
 app.use('/shoes', router);
 app.use(express.static(path.join(__dirname, '../client/dist')));
+app.use(favicon(path.join(__dirname, '../client/dist/favicon.png')));
 
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+app.listen(port, () => console.log(`Search module listening on port ${port}...`));

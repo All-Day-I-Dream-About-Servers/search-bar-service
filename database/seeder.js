@@ -4,10 +4,10 @@ const Shoe = require('./schema.js');
 const data = require('./data.json');
 
 const seeder = (seedData) => {
-  console.log('hi')
   Shoe.create(seedData)
     .then(() => {
       console.log('seeded');
+      mongoose.connection.close();
     })
     .catch((err) => {
       console.error(err);

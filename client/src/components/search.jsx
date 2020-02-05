@@ -5,7 +5,6 @@ export default class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showresults: false,
       allShoes: [],
       name: '',
       results: [],
@@ -32,7 +31,6 @@ export default class Search extends React.Component {
 
   onSearch(e) {
     var queries = e.target.value.split(' ');
-    console.log(queries)
     this.setState({
       [e.target.name]: e.target.value
     }, () => this.filterSearch());
@@ -64,7 +62,6 @@ export default class Search extends React.Component {
     this.setState({
       results: newResults
     }, () => {
-      console.log(this.state);
       if (this.state.results.length > 0) {
         this.setState({
           resultsbox: true

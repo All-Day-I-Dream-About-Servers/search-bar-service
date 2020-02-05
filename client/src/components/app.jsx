@@ -24,6 +24,7 @@ class App extends React.Component {
     this.hideAll = this.hideAll.bind(this);
   }
   componentDidMount() {
+    // handles navbar hiding/showing on scroll down/up
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -35,6 +36,7 @@ class App extends React.Component {
       prevScrollpos = currentScrollPos;
     }
   }
+  // handles each navmenu show.hide
   showNav1() {
     this.setState({
       nav1: true,

@@ -6,13 +6,8 @@ class Navbar extends React.Component {
     super(props);
     this.state = {
       showcart: false,
-      menlink: true,
-      navmen: true,
-      nav1: this.props.hidenav1
     };
     this.showcart = this.showcart.bind(this);
-    this.toggle = this.toggle.bind(this);
-    this.hidenavmen = this.hidenavmen.bind(this);
   }
 
   showcart() {
@@ -20,23 +15,8 @@ class Navbar extends React.Component {
       showcart: !this.state.showcart
     });
   }
-  toggle() {
-    this.setState({
-      menlink: !this.state.menlink
-    });
-  }
-  hidenavmen() {
-    this.setState({
-      navmen: !this.state.navmen
-    });
-  }
 
   render() {
-
-    var color = {
-      color: "black"
-    }
-
     return(
       <nav className="navbar" onMouseEnter={() => this.props.hideAll()}>
         <div className="logocontainer" onMouseEnter={() => this.props.hideAll()}>
@@ -89,7 +69,7 @@ class Navbar extends React.Component {
             <div className="emptycart">
               <img className="cartimg" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/Screen+Shot+2020-01-28+at+4.01.40+PM.png"></img>
             </div>
-          ) : null }
+          ):null}
           </div>
         </div>
       </nav>
