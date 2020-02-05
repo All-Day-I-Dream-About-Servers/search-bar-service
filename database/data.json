@@ -29,11 +29,11 @@
   {
     "sku": 4,
     "name": "Adilette 3.0 Sandals",
-    "color": "Green",
+    "color": "Black",
     "categories": ["Mens", "Sandals"],
     "price": 60,
     "sale": 0,
-    "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/adiease_shoes_green_m.png"
+    "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/adilette_3.0_sandals_black_m.png"
   },
   {
     "sku": 5,
@@ -794,8 +794,8 @@
   {
     "sku": 88,
     "name": "Terrex Two Parley Trail Running Shoes",
-    "color": "Whtie",
-    "categories": ["Men", "Original", "Running"],
+    "color": "White",
+    "categories": ["Womenste", "Original", "Running"],
     "price": 125,
     "sale": 0,
     "image": "https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/terrex_two_parley_trail_running_shoes_white_w.png"

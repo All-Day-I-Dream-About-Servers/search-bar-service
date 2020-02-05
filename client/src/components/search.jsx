@@ -65,7 +65,7 @@ export default class Search extends React.Component {
       results: newResults
     }, () => {
       console.log(this.state);
-      if (this.state.results.length > 2) {
+      if (this.state.results.length > 0) {
         this.setState({
           resultsbox: true
         });
@@ -146,7 +146,11 @@ export default class Search extends React.Component {
                 return <div className="oneShoe">
                     <img className="resultsImage" src={shoe.image}></img>
                     <div className="shoedescription">
-                      <p className="shoecategories">{shoe.categories[0]}</p>
+                      <div>
+                      {shoe.categories.map((category) => {
+                        return <span className="shoecategories">{category} </span>
+                      })}
+                      </div> 
                       <p className="shoeName">{shoe.name}</p>
                       <p className="shoeprice">
                         {shoe.sale > 0 ? (

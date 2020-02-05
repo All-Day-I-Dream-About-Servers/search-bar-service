@@ -33,7 +33,9 @@ class Navbar extends React.Component {
 
   render() {
 
-    // var linkcolor = this.state.menlink ? "menulinkhovered":"menlink"
+    var color = {
+      color: "black"
+    }
 
     return(
       <nav className="navbar" onMouseEnter={() => this.props.hideAll()}>
@@ -51,10 +53,11 @@ class Navbar extends React.Component {
               <a href="#">| &nbsp;CREATORS CLUB &nbsp;| &nbsp;</a>
               <a href="#">&nbsp; </a>
               <a href="#">LOG IN </a></span>
+              <a href="#" className="svg"><svg id="profile" viewBox="0 -5 20 24" width="26" height="26"><g fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="2"><path d="M19 20.5L15.63 16H4.38L1 20.5"></path><circle cx="10" cy="8.5" r="4.5"></circle></g></svg></a>
             </div>
           </div>
           <div className="navbottom">
-            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav1()} >
+            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav1("nav1")} >
               <a className="menulink" href="#">MEN</a>
             </div>
             <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav2()}>
@@ -72,7 +75,7 @@ class Navbar extends React.Component {
             </div>
             <a className="line" href="#">| </a>
             <div className="menulinkcontainer" onMouseEnter={() => this.props.hideAll()}>
-              <a className="release" href="#">RELEASE DATES</a>
+              <a className="release menulink" href="#">RELEASE DATES</a>
             </div>
             <div className="menusearch">
               <Search />

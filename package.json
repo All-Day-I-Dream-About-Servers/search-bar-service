@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack -d --w",
+    "seed": "node ./database/seeder.js",
     "start": "nodemon server"
   },
   "repository": {

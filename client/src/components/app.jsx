@@ -23,6 +23,18 @@ class App extends React.Component {
     this.showNav5 = this.showNav5.bind(this);
     this.hideAll = this.hideAll.bind(this);
   }
+  componentDidMount() {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  }
   showNav1() {
     this.setState({
       nav1: true,
@@ -92,22 +104,22 @@ class App extends React.Component {
           showNav5={this.showNav5}
           hideAll={this.hideAll}
           />
+          {this.state.nav1 ? (
+            <Navmen keepNav1={this.showNav1}/>
+          ): null}
+          {this.state.nav2 ? (
+            <Navwomen />
+          ): null}
+          {this.state.nav3 ? (
+            <Navkids />
+          ): null}
+          {this.state.nav4 ? (
+            <Navsports />
+          ): null}
+          {this.state.nav5 ? (
+            <Navbrands />
+          ): null}
         </div>
-        {this.state.nav1 ? (
-          <Navmen keepNav1={this.showNav1}/>
-        ): null}
-        {this.state.nav2 ? (
-          <Navwomen />
-        ): null}
-        {this.state.nav3 ? (
-          <Navkids />
-        ): null}
-        {this.state.nav4 ? (
-          <Navsports />
-        ): null}
-        {this.state.nav5 ? (
-          <Navbrands />
-        ): null}
       </div>
     );
   };
