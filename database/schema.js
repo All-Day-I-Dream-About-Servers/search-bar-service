@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const shoeSchema = mongoose.Schema({
-  sku: {type: Number, index: true},
+  sku: {type: Number, index: true, unique: true},
   name: String,
   color: String,
   categories: [String],
@@ -12,4 +12,4 @@ const shoeSchema = mongoose.Schema({
 
 var Shoe = mongoose.model('shoes', shoeSchema);
 
-module.exprots = Shoe;
+module.exports = Shoe;

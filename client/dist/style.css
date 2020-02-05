@@ -1,0 +1,411 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.navBack {
+  height: 56px;
+  background-color: black;
+  padding: 10px 45px 15px 140px
+}
+#navbar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  height: 56px;
+}
+.logo {
+  margin-left: 100px;
+  max-width: 75px;
+}
+.mainmenu {
+  width: 100%;
+  margin-left: 1rem;
+}
+.navtop {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -10px;
+  margin-left: 13.6%;
+  height: 50%;
+  width: 90%;
+  background: 
+  linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 70.71%),
+  linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 70.71%),
+  linear-gradient(236deg, rgba(78, 78, 78, 0.8), rgba(71, 71, 71, 0) 70.71%);
+}
+.toplinks {
+  margin-top: -5px;
+  margin-left: 270px;
+  font-size: 10px;
+  font-weight: lighter;
+}
+.toplinks a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+.reeboklogo {
+  width: 7%;
+  filter: invert();
+  margin-top: 7px;
+  margin-right: 30px;
+}
+.helplinks {
+  margin-top: -5px;
+  font-size: 11px;
+}
+.join {
+  font-weight: bold;
+}
+.join:hover {
+  background-color: white;
+  color: black;
+}
+.navbottom {
+  margin-top: 10px;
+  height: 55%;
+  padding-left: 8px;
+  padding-right: 70px;
+}
+.menulinkcontainer {
+  position: relative;
+  display: inline-block;
+  position: relative;
+  height: 28px;
+  padding-top: 15px;
+  margin-right: 5px;
+}
+.menulinkcontainer:hover {
+  background-color:white;
+}
+.menulink {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 100;
+}
+.menulinkcontainer:hover .menulink {
+  color: black
+}
+.release {
+  text-decoration: none;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 100;
+}
+.line {
+  text-decoration: none;
+  font-family: 'Maven Pro', sans-serif;
+  color: white;
+}
+.menusearch {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 230px;
+  margin-top: -42px;
+}
+.searchcontainer {
+  text-align: right;
+  margin-bottom: 8px;
+}
+.searchbar {
+  height: 33px;
+  width: 150px;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+  background-image: url('https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/searchicon.png');
+  background-position: 1px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  text-indent: 30px;
+  font-size: 0.4rem;
+  border: none;
+}
+.searchbar:focus {
+  width: 225px;
+}
+.searchbar::-webkit-search-cancel-button {
+  position: relative;
+  right: 20px;  
+
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background-image: url('https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/x.png');
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cartlink {
+  margin: -2px 15px 0 1px;
+}
+.shoppingcart {
+  height: 50px;
+  width: 52px;
+  margin-top: -10px;
+}
+.emptycartcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.emptycart {
+  margin-top: 12px;
+  width: 320px;
+  height: 50px;
+  background-color: white;
+  margin-right: 315px;
+  -webkit-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+}
+.shoppingcart:hover {
+  filter: invert();
+}
+.cartimg {
+  margin-top: 12px;
+  margin-left: 60px;
+  width: 60%;
+}
+.titlemen {
+  margin-left: 339px;
+  margin-top: -40px;
+  color: black;
+  width: 33px;
+  height: 40px;
+  padding-top: 12px;
+}
+.titlewomen {
+  margin-left: 377px;
+  margin-top: -40px;
+  width: 64px;
+  height: 40px;
+  padding-top: 12px;
+}
+.titlekids {
+  margin-left: 442px;
+  margin-top: -40px;
+  width: 38px;
+  height: 40px;
+  padding-top: 12px;
+}
+.titlesports {
+  margin-left: 492px;
+  margin-top: -40px;
+  width: 62px;
+  height: 40px;
+  padding-top: 12px;
+}
+.titlebrands {
+  margin-left: 555px;
+  margin-top: -40px;
+  width: 62px;
+  height: 40px;
+  padding-top: 12px;
+}
+.menulinkblack {
+  text-decoration: none;
+  color: black;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 100;
+}
+.maincontainer {
+  background-color: white;
+  margin-left: -150px;
+  padding: 0 0 50px 10%;
+  width: 100%;
+  height: 510px;
+  -webkit-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
+}
+.maincontainerkids {
+  background-color: white;
+  margin-left: -150px;
+  padding: 0 0 50px 10%;
+  width: 100%;
+  height: 260px;
+  -webkit-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
+}
+.maincontainersports {
+  background-color: white;
+  margin-left: -150px;
+  padding: 0 0 50px 10%;
+  width: 100%;
+  height: 450px;
+  -webkit-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
+}
+.maincontainerbrands {
+  background-color: white;
+  margin-left: -150px;
+  padding: 0 0 50px 10%;
+  width: 100%;
+  height: 550px;
+  -webkit-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
+}
+.mainline {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 95%;
+  padding: 10px 20px 0 0px;
+  margin-left: 0px;
+}
+.column {
+  width: 180px;
+  height: 95%;
+  padding: 1% 0 0 0;
+  border-bottom: 1px solid lightgrey;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.brandicon {
+  margin-bottom: 15px;
+}
+.title {
+  margin-bottom: 20px;
+}
+.subtitle {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.column ul {
+  list-style-type: none;
+  font-weight: thin;
+  color: rgb(100, 100, 100);
+  font-size: 13px;
+}
+.column ul li hr {
+  width: 15px;
+  border: 1px solid lightgrey
+}
+.column ul li {
+  margin-bottom: 10px;
+}
+.column ul li:hover {
+  text-decoration: underline;
+}
+.bottomline {
+  border: 1px solid lightgrey;
+  width: 98%;
+}
+.bold {
+  color: black;
+  font-weight: bolder;
+}
+.bottomtextcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+}
+.bottomtext {
+  width: 170px;
+  margin-left: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: black;
+  font-weight: bolder;
+}
+.resultsContainer {
+  position: relative;
+  width: 630px;
+  height: 470px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.8rem;
+  /* z-index: 1; */
+  padding-top: 20px;
+  padding-left: 20px;
+  -webkit-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
+  box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
+}
+.shoedescription {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+}
+.resultsImage {
+  width: 90px;
+  height: 90px;
+}
+.shoecategories {
+  /* letter-spacing: 0.8em; */
+  color: grey;
+}
+.shoeName {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.resultsContainer p {
+  vertical-align: top;
+  letter-spacing: 0.08em;
+  overflow-wrap: normal;
+}
+.inner {
+  width: 305px;
+  height: 410px;
+}
+.inner h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+.seeall {
+  font-weight: bolder;
+  vertical-align: bottom;
+  text-decoration: underline;
+}
+.innerright {
+  flex-shrink: 1;
+  overflow-y: hidden;
+}
+.innerright h2 {
+  letter-spacing: 0.1em;
+}
+.saleprice {
+  color: red;
+}
+.slashprice {
+  color: grey;
+  text-decoration: line-through;
+  text-decoration-color: grey;
+}
+.oneShoe {
+  margin-bottom: 5px;
+}
+.suggestions {
+  padding: 10px 20px 0 0;
+}
+.suggestionsrow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+  letter-spacing: -2px;
+}
+.suggestions p:nth-child(2n) {
+  color: grey;
+  font-size: 0.85rem;
+}
+.searchterm {
+  font-weight: bold;
+}
