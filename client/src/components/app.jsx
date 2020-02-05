@@ -43,11 +43,11 @@ class App extends React.Component {
       [navnum]: false
     })
   }
-  
+
   render() {
     return(
       <div>
-        <div id="navbar" className="navBack">
+        <div id="navbar" className="cbnavBack">
           <MainNavbar 
           showNav={this.showNav}
           hideNav={this.hideNav}

@@ -8,14 +8,14 @@ class Navmen extends React.Component {
 
   render() {
     return(
-      <div className="expandedcontainer">
-        <div className="titlemen">
-          <a className="menulinkblack" href="#">MEN</a>
+      <div className="cbexpandedcontainer">
+        <div className="cbtitlemen">
+          <a className="cbmenulinkblack" href="#">MEN</a>
         </div>
-        <div className="maincontainer">
-          <div className="mainline">
-            <div className="column">
-              <h3 className="title">TRENDING</h3>
+        <div className="cbmaincontainer">
+          <div className="cbmainline">
+            <div className="cbcolumn">
+              <h3 className="cbtitle">TRENDING</h3>
               <ul>
                 <li>New Arrivals</li>
                 <li>Best Sellers</li>
@@ -27,8 +27,8 @@ class Navmen extends React.Component {
                 <li>Your Best Year</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">SHOES</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">SHOES</h3>
               <ul>
                 <li>New Arrivals</li>
                 <li>Originals</li>
@@ -46,8 +46,8 @@ class Navmen extends React.Component {
                 <li>Baseball</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">CLOTHING</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">CLOTHING</h3>
               <ul>
                 <li>New Arrivals</li>
                 <li>Pants</li>
@@ -65,8 +65,8 @@ class Navmen extends React.Component {
                 <li>Socks & Underwear</li>
               </ul>
             </div>
-            <div className="column">
-            <h3 className="title">ACCESSORIES</h3>
+            <div className="cbcolumn">
+            <h3 className="cbtitle">ACCESSORIES</h3>
               <ul>
                 <li>New Arrivals</li>
                 <li>Bags & Backpacks</li>
@@ -75,8 +75,8 @@ class Navmen extends React.Component {
                 <li>Watches</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">SALE</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">SALE</h3>
               <ul>
                 <li>Shoes</li>
                 <li>Clothing</li>
@@ -86,8 +86,8 @@ class Navmen extends React.Component {
                 <li>Less than $100</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">COLLECTIONS</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">COLLECTIONS</h3>
               <ul>
                 <li>adicolor</li>
                 <li>NMD</li>
@@ -106,13 +106,13 @@ class Navmen extends React.Component {
               </ul>
             </div>
           </div>
-          <div className="bottomtextcontainer">
-            <p className="bottomtext"></p>
-            <p className="bottomtext">All Men's Shoes</p>
-            <p className="bottomtext">All Men's Clothing</p>
-            <p className="bottomtext">All Men's Accessories</p>
-            <p className="bottomtext">All Men's Sale</p>
-            <p className="bottomtext"></p>
+          <div className="cbbottomtextcontainer">
+            <p className="cbbottomtext"></p>
+            <p className="cbbottomtext">All Men's Shoes</p>
+            <p className="cbbottomtext">All Men's Clothing</p>
+            <p className="cbbottomtext">All Men's Accessories</p>
+            <p className="cbbottomtext">All Men's Sale</p>
+            <p className="cbbottomtext"></p>
           </div>
         </div>
       </div>
