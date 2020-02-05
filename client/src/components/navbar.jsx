@@ -18,12 +18,12 @@ class Navbar extends React.Component {
 
   render() {
     return(
-      <nav className="navbar" onMouseEnter={() => this.props.hideAll()}>
-        <div className="logocontainer" onMouseEnter={() => this.props.hideAll()}>
+      <nav className="navbar">
+        <div className="logocontainer">
           <img className="logo" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/logosmall.png"></img>
         </div>
-        <div className="mainmenu" onMouseEnter={() => this.props.hideAll()}>
-          <div className="navtop" onMouseEnter={() => this.props.hideAll()}>
+        <div className="mainmenu">
+          <div className="navtop">
             <div className="toplinks">
               <a href="#">ALSO VISIT &nbsp;</a>
               <img className="reeboklogo" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/reebok.png"></img>
@@ -37,24 +37,34 @@ class Navbar extends React.Component {
             </div>
           </div>
           <div className="navbottom">
-            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav1("nav1")} >
+            <div className="menulinkcontainer" 
+              onMouseEnter={() => this.props.showNav("nav1")} 
+              onMouseLeave={() => this.props.hideNav("nav1")}>
               <a className="menulink" href="#">MEN</a>
             </div>
-            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav2()}>
+            <div className="menulinkcontainer" 
+              onMouseEnter={() => this.props.showNav("nav2")} 
+              onMouseLeave={() => this.props.hideNav("nav2")}>
               <a className="menulink" href="#">WOMEN</a>
             </div>
-            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav3()}>
+            <div className="menulinkcontainer" 
+              onMouseEnter={() => this.props.showNav("nav3")} 
+              onMouseLeave={() => this.props.hideNav("nav3")}>
               <a className="menulink" href="#">KIDS</a>
             </div>
             <a className="line" href="#">| </a>
-            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav4()}>
+            <div className="menulinkcontainer" 
+              onMouseEnter={() => this.props.showNav("nav4")} 
+              onMouseLeave={() => this.props.hideNav("nav4")}>
               <a className="menulink" href="#">SPORTS</a>
             </div>
-            <div className="menulinkcontainer" onMouseEnter={() => this.props.showNav5()}>
+            <div className="menulinkcontainer" 
+              onMouseEnter={() => this.props.showNav("nav5")} 
+              onMouseLeave={() => this.props.hideNav("nav5")}>
               <a className="menulink" href="#">BRANDS</a>
             </div>
             <a className="line" href="#">| </a>
-            <div className="menulinkcontainer" onMouseEnter={() => this.props.hideAll()}>
+            <div className="menulinkcontainer" >
               <a className="release menulink" href="#">RELEASE DATES</a>
             </div>
             <div className="menusearch">
