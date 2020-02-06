@@ -8,14 +8,14 @@ class Navbrands extends React.Component {
 
   render() {
     return(
-      <div className="expandedcontainer">
-        <div className="titlebrands">
-          <a className="menulinkblack" href="#">BRANDS</a>
+      <div className="cbexpandedcontainer" onMouseLeave={() => this.props.hideNav()}>
+        <div className="cbtitlebrands">
+          <a className="cbmenulinkblack" href="#">BRANDS</a>
         </div>
-        <div className="maincontainerbrands">
-          <div className="mainline">
-            <div className="column">
-              <img className="brandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/originals.png"></img>
+        <div className="cbmaincontainerbrands">
+          <div className="cbmainline">
+            <div className="cbcolumn">
+              <img className="cbbrandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/originals.png"></img>
               <img src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/originals2.jpg"></img>
               <ul>
                 <li>Shoes</li>
@@ -27,22 +27,22 @@ class Navbrands extends React.Component {
                 <li>adicolor</li>
                 <li>Home Of Classics</li>
                 <li><hr/></li>
-                <li className="bold" className="bold">All adidas Originals</li>
+                <li className="cbbold">All adidas Originals</li>
               </ul>
             </div>
-            <div className="column">
-              <img className="brandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/ivypark.jpg"></img>
+            <div className="cbcolumn">
+              <img className="cbbrandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/ivypark.jpg"></img>
               <img src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/ivypark2.jpg"></img>
               <ul>
                 <li>Shoes</li>
                 <li>Clothing</li>
                 <li>Accessories</li>
                 <li><hr/></li>
-                <li className="bold">All adidas x IVY PARK</li>
+                <li className="cbbold">All adidas x IVY PARK</li>
               </ul>
             </div>
-            <div className="column">
-              <img className="brandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/stella.png"></img>
+            <div className="cbcolumn">
+              <img className="cbbrandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/stella.png"></img>
               <img src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/stella2.jpg"></img>
               <ul>
                 <li>Shoes</li>
@@ -52,29 +52,29 @@ class Navbrands extends React.Component {
                 <li>Tennis</li>
                 <li>Training</li>
                 <li><hr /></li>
-                <li className="bold">All adidas by Stella McCartney</li>
+                <li className="cbbold">All adidas by Stella McCartney</li>
               </ul>
             </div>
-            <div className="column">
-              <img className="brandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/y3.png"></img>
+            <div className="cbcolumn">
+              <img className="cbbrandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/y3.png"></img>
               <img src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/y32.jpg"></img>
               <ul>
                 <li><hr/></li>
-                <li className="bold">All Y-3</li>
+                <li className="cbbold">All Y-3</li>
               </ul>
             </div>
-            <div className="column">
-              <img className="brandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/plastic.jpg"></img>
+            <div className="cbcolumn">
+              <img className="cbbrandicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/plastic.jpg"></img>
               <img src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/plastic2.jpg"></img>
               <ul>
                 <li>Products made with ocean plastic</li>
                 <li>Products made with recycled polyester</li>
                 <li><hr /></li>
-                <li className="bold">All products made with recycled materials</li>
+                <li className="cbbold">All products made with recycled materials</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">COLLECTIONS</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">COLLECTIONS</h3>
               <ul>
                 <li>IVY PARK</li>
                 <li>Ultraboose</li>

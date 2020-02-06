@@ -6,7 +6,7 @@ import Navkids from './navkids.jsx';
 import Navsports from './navsports.jsx';
 import Navbrands from './navbrands.jsx';
 
-class App extends React.Component {
+class SearchApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,14 +16,11 @@ class App extends React.Component {
       nav4: false,
       nav5: false
     };
-    this.showNav1 = this.showNav1.bind(this);
-    this.showNav2 = this.showNav2.bind(this);
-    this.showNav3 = this.showNav3.bind(this);
-    this.showNav4 = this.showNav4.bind(this);
-    this.showNav5 = this.showNav5.bind(this);
-    this.hideAll = this.hideAll.bind(this);
+    this.showNav = this.showNav.bind(this);
+    this.hideNav = this.hideNav.bind(this);
   }
   componentDidMount() {
+    // handles navbar hiding/showing on scroll down/up
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -35,89 +32,51 @@ class App extends React.Component {
       prevScrollpos = currentScrollPos;
     }
   }
-  showNav1() {
+  // handles each navmenu show/hide
+  showNav(navnum) {
+    for (var nav in this.state) {
+      if (this.state[nav] === true) {
+        this.setState({
+          [nav] : false
+        })
+      }
+    }
     this.setState({
-      nav1: true,
-      nav2: false,
-      nav3: false,
-      nav4: false,
-      nav5: false
+      [navnum]: true
     });
   }
-  showNav2() {
-    this.setState({
-      nav1: false,
-      nav2: !this.state.nav2,
-      nav3: false,
-      nav4: false,
-      nav5: false
-    });
+  hideNav() {
+    for (var nav in this.state) {
+      if (this.state[nav] === true) {
+        this.setState({
+          [nav] : false
+        })
+      }
+    }
   }
-  showNav3() {
-    this.setState({
-      nav1: false,
-      nav2: false,
-      nav3: !this.state.nav3,
-      nav4: false,
-      nav5: false
-    });
-  }
-  showNav4() {
-    this.setState({
-      nav1: false,
-      nav2: false,
-      nav3: false,
-      nav4: !this.state.nav4,
-      nav5: false
-    });
-  }
-  showNav5() {
-    this.setState({
-      nav1: false,
-      nav2: false,
-      nav3: false,
-      nav4: false,
-      nav5: !this.state.nav5
-    });
-  }
-  hideAll() {
-    this.setState({
-      nav1: false,
-      nav2: false,
-      nav3: false,
-      nav4: false,
-      nav5: false
-    });
-  }
-
 
   render() {
     return(
       <div>
-        <div id="navbar" className="navBack" onMouseEnter={this.hideAll}>
+        <div id="navbar" className="cbnavBack">
           <MainNavbar 
-          nav1={this.state.nav1} 
-          showNav1={this.showNav1}
-          showNav2={this.showNav2}
-          showNav3={this.showNav3}
-          showNav4={this.showNav4}
-          showNav5={this.showNav5}
-          hideAll={this.hideAll}
+          showNav={this.showNav}
+          hideNav={this.hideNav}
           />
           {this.state.nav1 ? (
-            <Navmen keepNav1={this.showNav1}/>
+            <Navmen hideNav={this.hideNav} />
           ): null}
           {this.state.nav2 ? (
-            <Navwomen />
+            <Navwomen hideNav={this.hideNav} />
           ): null}
           {this.state.nav3 ? (
-            <Navkids />
+            <Navkids hideNav={this.hideNav} />
           ): null}
           {this.state.nav4 ? (
-            <Navsports />
+            <Navsports hideNav={this.hideNav} />
           ): null}
           {this.state.nav5 ? (
-            <Navbrands />
+            <Navbrands hideNav={this.hideNav} />
           ): null}
         </div>
       </div>
@@ -125,4 +84,4 @@ class App extends React.Component {
   };
 };
 
-export default App;
+export default SearchApp;

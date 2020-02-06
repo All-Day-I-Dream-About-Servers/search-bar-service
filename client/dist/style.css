@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-.navBack {
+.cbnavBack {
   height: 56px;
   background-color: black;
   padding: 10px 45px 15px 140px
@@ -15,20 +15,21 @@
   display: block;
   transition: top 0.3s;
 }
-.navbar {
+.cbnavbar {
   display: flex;
   justify-content: flex-start;
   height: 56px;
 }
-.logo {
+.cblogo {
+  cursor: pointer;
   margin-left: 100px;
   max-width: 75px;
 }
-.mainmenu {
+.cbmainmenu {
   width: 100%;
   margin-left: 1rem;
 }
-.navtop {
+.cbnavtop {
   display: flex;
   justify-content: flex-start;
   margin-top: -10px;
@@ -38,44 +39,47 @@
   background: 
   linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 70.71%),
   linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 70.71%),
-  linear-gradient(236deg, rgba(78, 78, 78, 0.8), rgba(71, 71, 71, 0) 70.71%);
+  linear-gradient(236deg, rgba(78, 78, 78, 0.8), rgba(71, 71, 71, 0) 70.71%),
+  linear-gradient(156deg, rgba(20, 20, 20, 0.8), rgba(71, 71, 71, 0) 70.71%);
+
 }
-.toplinks {
+.cbtoplinks {
+  cursor: pointer;
   margin-top: -5px;
   margin-left: 270px;
   font-size: 10px;
   font-weight: lighter;
 }
-.toplinks a {
-  font-family: 'Open Sans', sans-serif;
+.cbtoplinks a {
+  font-family: 'Helvetica', 'Arial', sans-serif;
   text-decoration: none;
   color: white;
   font-weight: lighter;
 }
-.reeboklogo {
+.cbreeboklogo {
   width: 7%;
   filter: invert();
   margin-top: 7px;
   margin-right: 30px;
 }
-.helplinks {
+.cbhelplinks {
   margin-top: -5px;
   font-size: 11px;
 }
-.join {
+.cbjoin {
   font-weight: bold;
 }
-.join:hover {
+.cbjoin:hover {
   background-color: white;
   color: black;
 }
-.navbottom {
+.cbnavbottom {
   margin-top: 10px;
   height: 55%;
   padding-left: 8px;
   padding-right: 70px;
 }
-.menulinkcontainer {
+.cbmenulinkcontainer {
   position: relative;
   display: inline-block;
   position: relative;
@@ -83,41 +87,46 @@
   padding-top: 15px;
   margin-right: 5px;
 }
-.menulinkcontainer:hover {
+.cbmenulinkcontainer:hover {
+  color: black;
   background-color:white;
 }
-.menulink {
+.cbmenulink {
+  cursor: pointer;
   position: relative;
   text-decoration: none;
   color: white;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 100;
+  font-family: 'Helvitica', 'Arial', sans-serif;
+  font-weight: lighter;
 }
-.menulinkcontainer:hover .menulink {
+.cbmenulinkcontainer:hover .cbmenulink {
   color: black
 }
-.release {
+.cbrelease {
   text-decoration: none;
   color: white;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Helvitica', 'Arial', sans-serif;
   font-weight: 100;
 }
-.line {
+.cbrelease:hover {
+  color:black;
+}
+.cbline {
   text-decoration: none;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Helvitica', 'Arial', sans-serif;
   color: white;
 }
-.menusearch {
+.cbmenusearch {
   display: flex;
   justify-content: flex-end;
   margin-right: 230px;
   margin-top: -42px;
 }
-.searchcontainer {
+.cbsearchcontainer {
   text-align: right;
   margin-bottom: 8px;
 }
-.searchbar {
+.cbsearchbar {
   height: 33px;
   width: 150px;
   -webkit-transition: width 0.2s ease-in-out;
@@ -127,13 +136,13 @@
   background-repeat: no-repeat;
   background-size: 20px;
   text-indent: 30px;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
   border: none;
 }
-.searchbar:focus {
+.cbsearchbar:focus {
   width: 225px;
 }
-.searchbar::-webkit-search-cancel-button {
+.cbsearchbar::-webkit-search-cancel-button {
   position: relative;
   right: 20px;  
 
@@ -145,20 +154,20 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.cartlink {
+.cbcartlink {
   margin: -2px 15px 0 1px;
 }
-.shoppingcart {
+.cbshoppingcart {
   height: 50px;
   width: 52px;
   margin-top: -10px;
 }
-.emptycartcontainer {
+.cbemptycartcontainer {
   display: flex;
   justify-content: flex-end;
 }
-.emptycart {
-  margin-top: 12px;
+.cbemptycart {
+  margin-top: 9px;
   width: 320px;
   height: 50px;
   background-color: white;
@@ -167,15 +176,15 @@
   -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
   box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
 }
-.shoppingcart:hover {
+.cbshoppingcart:hover {
   filter: invert();
 }
-.cartimg {
+.cbcartimg {
   margin-top: 12px;
   margin-left: 60px;
   width: 60%;
 }
-.titlemen {
+.cbtitlemen {
   margin-left: 339px;
   margin-top: -40px;
   color: black;
@@ -183,41 +192,41 @@
   height: 40px;
   padding-top: 12px;
 }
-.titlewomen {
+.cbtitlewomen {
   margin-left: 377px;
   margin-top: -40px;
   width: 64px;
   height: 40px;
   padding-top: 12px;
 }
-.titlekids {
+.cbtitlekids {
   margin-left: 442px;
   margin-top: -40px;
   width: 38px;
   height: 40px;
   padding-top: 12px;
 }
-.titlesports {
+.cbtitlesports {
   margin-left: 492px;
   margin-top: -40px;
   width: 62px;
   height: 40px;
   padding-top: 12px;
 }
-.titlebrands {
+.cbtitlebrands {
   margin-left: 555px;
   margin-top: -40px;
   width: 62px;
   height: 40px;
   padding-top: 12px;
 }
-.menulinkblack {
+.cbmenulinkblack {
   text-decoration: none;
   color: black;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Helvitica', 'Arial', sans-serif;
   font-weight: 100;
 }
-.maincontainer {
+.cbmaincontainer {
   background-color: white;
   margin-left: -150px;
   padding: 0 0 50px 10%;
@@ -227,7 +236,7 @@
   -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
   box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
 }
-.maincontainerkids {
+.cbmaincontainerkids {
   background-color: white;
   margin-left: -150px;
   padding: 0 0 50px 10%;
@@ -237,7 +246,7 @@
   -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
   box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
 }
-.maincontainersports {
+.cbmaincontainersports {
   background-color: white;
   margin-left: -150px;
   padding: 0 0 50px 10%;
@@ -247,7 +256,7 @@
   -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
   box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
 }
-.maincontainerbrands {
+.cbmaincontainerbrands {
   background-color: white;
   margin-left: -150px;
   padding: 0 0 50px 10%;
@@ -257,7 +266,7 @@
   -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
   box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
 }
-.mainline {
+.cbmainline {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
@@ -265,62 +274,65 @@
   padding: 10px 20px 0 0px;
   margin-left: 0px;
 }
-.column {
+.cbcolumn {
   width: 180px;
   height: 95%;
   padding: 1% 0 0 0;
   border-bottom: 1px solid lightgrey;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: lighter;
 }
-.brandicon {
+.cbcolumn h3, ul li {
+  cursor: pointer;
+}
+.cbbrandicon {
   margin-bottom: 15px;
 }
-.title {
+.cbtitle {
   margin-bottom: 20px;
 }
-.subtitle {
+.cbsubtitle {
   margin-top: -20px;
   margin-bottom: 20px;
 }
-.column ul {
+.cbcolumn ul {
   list-style-type: none;
   font-weight: thin;
   color: rgb(100, 100, 100);
   font-size: 13px;
 }
-.column ul li hr {
+.cbcolumn ul li hr {
   width: 15px;
   border: 1px solid lightgrey
 }
-.column ul li {
+.cbcolumn ul li {
   margin-bottom: 10px;
 }
-.column ul li:hover {
+.cbcolumn ul li:hover {
   text-decoration: underline;
 }
-.bottomline {
+.cbbottomline {
   border: 1px solid lightgrey;
   width: 98%;
 }
-.bold {
+.cbbold {
   color: black;
   font-weight: bolder;
 }
-.bottomtextcontainer {
+.cbbottomtextcontainer {
   display: flex;
   justify-content: space-between;
   width: 77%;
 }
-.bottomtext {
+.cbbottomtext {
   width: 170px;
   margin-left: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 13px;
   color: black;
   font-weight: bolder;
 }
-.resultsContainer {
+.cbresultsContainer {
   position: relative;
   width: 630px;
   height: 470px;
@@ -336,20 +348,21 @@
   -moz-box-shadow: 1px 13px 24px -15px rgba(64,64,64,1);
   box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
 }
-.shoedescription {
+.cbshoedescription {
+  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   padding-left: 10px;
 }
-.resultsImage {
+.cbresultsImage {
+  cursor: pointer;
   width: 90px;
   height: 90px;
 }
-.shoecategories {
-  /* letter-spacing: 0.8em; */
+.cbshoecategories {
   color: grey;
 }
-.shoeName {
+.cbshoeName {
   display: inline-block;
   width: 200px;
   vertical-align: top;
@@ -358,54 +371,59 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.resultsContainer p {
+.cbresultsContainer p {
   vertical-align: top;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   overflow-wrap: normal;
 }
-.inner {
+.cbinner {
   width: 305px;
   height: 410px;
 }
-.inner h2 {
-  font-family: 'Open Sans', sans-serif;
+.cbinner h2 {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: lighter;
 }
-.seeall {
+.cbseeAll {
   font-weight: bolder;
   vertical-align: bottom;
   text-decoration: underline;
+  color:black;
+  background-color:white;
 }
-.innerright {
+.cbseeAll:hover {
+  color: white;
+  background-color: black;
+}
+.cbinnerright {
+  font-family: 'Helvetica', 'Arial', sans-serif;
   flex-shrink: 1;
   overflow-y: hidden;
 }
-.innerright h2 {
-  letter-spacing: 0.1em;
-}
-.saleprice {
+.cbsaleprice {
   color: red;
 }
-.slashprice {
+.cbslashprice {
   color: grey;
   text-decoration: line-through;
   text-decoration-color: grey;
 }
-.oneShoe {
+.cboneShoe {
   margin-bottom: 5px;
 }
-.suggestions {
+.cbsuggestions {
   padding: 10px 20px 0 0;
 }
-.suggestionsrow {
+.cbsuggestionsrow {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.8rem;
-  letter-spacing: -2px;
 }
-.suggestions p:nth-child(2n) {
+.cbsuggestions p:nth-child(2n) {
   color: grey;
   font-size: 0.85rem;
 }
-.searchterm {
+.cbsearchterm {
   font-weight: bold;
 }

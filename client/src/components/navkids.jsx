@@ -8,14 +8,14 @@ class Navkids extends React.Component {
 
   render() {
     return(
-      <div className="expandedcontainer">
-        <div className="titlekids">
-          <a className="menulinkblack" href="#">KIDS</a>
+      <div className="cbexpandedcontainer" onMouseLeave={() => this.props.hideNav()}>
+        <div className="cbtitlekids">
+          <a className="cbmenulinkblack" href="#">KIDS</a>
         </div>
-        <div className="maincontainerkids">
-          <div className="mainline">
-            <div className="column">
-              <h3 className="title">TRENDING</h3>
+        <div className="cbmaincontainerkids">
+          <div className="cbmainline">
+            <div className="cbcolumn">
+              <h3 className="cbtitle">TRENDING</h3>
               <ul>
                 <li>New Arrivals</li>
                 <li>Best Sellers</li>
@@ -26,9 +26,9 @@ class Navkids extends React.Component {
                 <li>Winter Collection</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">YOUTH</h3>
-              <h3 className="subtitle">(AGE 8-14)</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">YOUTH</h3>
+              <h3 className="cbsubtitle">(AGE 8-14)</h3>
               <ul>
                 <li>Boys Shoes</li>
                 <li>Girls Shoes</li>
@@ -37,9 +37,9 @@ class Navkids extends React.Component {
                 <li>Accessories</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">CHILDREN</h3>
-              <h3 className="subtitle">(AGE 4-8)</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">CHILDREN</h3>
+              <h3 className="cbsubtitle">(AGE 4-8)</h3>
               <ul>
                 <li>Boys Shoes</li>
                 <li>Girls Shoes</li>
@@ -48,16 +48,16 @@ class Navkids extends React.Component {
                 <li>Accessories</li>
               </ul>
             </div>
-            <div className="column">
-            <h3 className="title">BABY & TODDLERS</h3>
-            <h3 className="subtitle">(AGE 0-4)</h3>
+            <div className="cbcolumn">
+            <h3 className="cbtitle">BABY & TODDLERS</h3>
+            <h3 className="cbsubtitle">(AGE 0-4)</h3>
               <ul>
                 <li>Shoes</li>
                 <li>Clothing</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">SALE</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">SALE</h3>
               <ul>
                 <li>Youth (Age 8-14)</li>
                 <li>Children (Age 4-8</li>
@@ -67,17 +67,17 @@ class Navkids extends React.Component {
                 <li>Less than $50</li>
               </ul>
             </div>
-            <div className="column">
-              {/* <h3 className="title">COLLECTIONS</h3> */}
+            <div className="cbcolumn">
+              {/* <h3 className="cbtitle">COLLECTIONS</h3> */}
             </div>
           </div>
-          <div className="bottomtextcontainer">
-            <p className="bottomtext"></p>
-            <p className="bottomtext">All Youth</p>
-            <p className="bottomtext">All Children</p>
-            <p className="bottomtext">All Baby & Toddler</p>
-            <p className="bottomtext">All Kid's Sale</p>
-            <p className="bottomtext"></p>
+          <div className="cbbottomtextcontainer">
+            <p className="cbbottomtext"></p>
+            <p className="cbbottomtext">All Youth</p>
+            <p className="cbbottomtext">All Children</p>
+            <p className="cbbottomtext">All Baby & Toddler</p>
+            <p className="cbbottomtext">All Kid's Sale</p>
+            <p className="cbbottomtext"></p>
           </div>
         </div>
       </div>

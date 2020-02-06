@@ -5,7 +5,6 @@ export default class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showresults: false,
       allShoes: [],
       name: '',
       results: [],
@@ -21,7 +20,7 @@ export default class Search extends React.Component {
   }
   
   getShoes() {
-    Axios.get('/shoes')
+    Axios.get('http://localhost:3005/shoes')
       .then((list) => {
         this.setState({
           allShoes: list.data
@@ -32,7 +31,6 @@ export default class Search extends React.Component {
 
   onSearch(e) {
     var queries = e.target.value.split(' ');
-    console.log(queries)
     this.setState({
       [e.target.name]: e.target.value
     }, () => this.filterSearch());
@@ -61,10 +59,10 @@ export default class Search extends React.Component {
         }
       }
     }
+
     this.setState({
       results: newResults
     }, () => {
-      console.log(this.state);
       if (this.state.results.length > 0) {
         this.setState({
           resultsbox: true
@@ -92,71 +90,71 @@ export default class Search extends React.Component {
 
   render() {
     return(
-      <div>
-        <form className="searchcontainer">
-          <input type="search" name="name" className="searchbar" placeholder="Search" onChange={this.onSearch}></input>
+      <div onMouseEnter={() => this.props.hidecart()}>
+        <form className="cbsearchcontainer">
+          <input type="search" name="name" className="cbsearchbar" placeholder="Search" onChange={this.onSearch}></input>
         </form>
         {this.state.resultsbox ? (
-          <div className="resultsContainer">
-            <div className="inner innerleft">
+          <div className="cbresultsContainer">
+            <div className="cbinner cbinnerleft">
               <h2>Suggestions</h2>
-              <div className="suggestions">
-                <div className="suggestionsrow">
-                  <p><span className="searchterm">{this.state.name.toUpperCase()}</span></p>
+              <div className="cbsuggestions">
+                <div className="cbsuggestionsrow">
+                  <p><span className="cbsearchterm">{this.state.name.toUpperCase()}</span></p>
                   <p>{Math.floor(Math.random() * 150)}</p>
                 </div>
-                <div className="suggestionsrow">
-                  <p><span className="searchterm">{this.state.name.toUpperCase()}</span> SHOES</p>
+                <div className="cbsuggestionsrow">
+                  <p><span className="cbsearchterm">{this.state.name.toUpperCase()}</span> SHOES</p>
                   <p>{this.state.results.length}</p>
                 </div>
-                <div className="suggestionsrow">
-                  <p><span className="searchterm">{this.state.name.toUpperCase()}</span> PANTS</p>
+                <div className="cbsuggestionsrow">
+                  <p><span className="cbsearchterm">{this.state.name.toUpperCase()}</span> PANTS</p>
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
-                <div className="suggestionsrow">
-                  <p><span className="searchterm">{this.state.name.toUpperCase()}</span> JACKET</p>
+                <div className="cbsuggestionsrow">
+                  <p><span className="cbsearchterm">{this.state.name.toUpperCase()}</span> JACKET</p>
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
-                <div className="suggestionsrow">
-                  <p>NEW YORK <span className="searchterm">{this.state.name.toUpperCase()}</span> BULL</p>
+                <div className="cbsuggestionsrow">
+                  <p>NEW YORK <span className="cbsearchterm">{this.state.name.toUpperCase()}</span> BULL</p>
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
-                <div className="suggestionsrow">
-                  <p><span className="searchterm">{this.state.name.toUpperCase()}</span> WOMEN SHOES</p>
+                <div className="cbsuggestionsrow">
+                  <p><span className="cbsearchterm">{this.state.name.toUpperCase()}</span> WOMEN SHOES</p>
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
-                <div className="suggestionsrow">
-                  <p><span className="searchterm">{this.state.name.toUpperCase()}</span> HOODIE</p>
+                <div className="cbsuggestionsrow">
+                  <p><span className="cbsearchterm">{this.state.name.toUpperCase()}</span> HOODIE</p>
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
-                <div className="suggestionsrow">
-                  <p>WOMEN <span className="searchterm">{this.state.name.toUpperCase()}</span></p>
+                <div className="cbsuggestionsrow">
+                  <p>WOMEN <span className="cbsearchterm">{this.state.name.toUpperCase()}</span></p>
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
-                <div className="suggestionsrow">
-                  <p><span className="searchterm">{this.state.name.toUpperCase()}</span> NMD</p>
+                <div className="cbsuggestionsrow">
+                  <p><span className="cbsearchterm">{this.state.name.toUpperCase()}</span> NMD</p>
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
               </div>
-              <p className="seeall">SEE ALL "{this.state.name.toUpperCase()}"</p>
+              <p className="cbseeAll">SEE ALL "{this.state.name.toUpperCase()}"</p>
             </div>
-            <div className="inner innerright">
+            <div className="cbinner cbinnerright">
               <h2>Products</h2>
               {this.state.results.map((shoe) => {
-                return <div className="oneShoe">
-                    <img className="resultsImage" src={shoe.image}></img>
-                    <div className="shoedescription">
+                return <div className="cboneShoe">
+                    <img className="cbresultsImage" src={shoe.image}></img>
+                    <div className="cbshoedescription">
                       <div>
                       {shoe.categories.map((category) => {
-                        return <span className="shoecategories">{category} </span>
+                        return <span className="cbshoecategories">{category} </span>
                       })}
                       </div> 
-                      <p className="shoeName">{shoe.name}</p>
-                      <p className="shoeprice">
+                      <p className="cbshoeName">{shoe.name}</p>
+                      <p className="cbshoeprice">
                         {shoe.sale > 0 ? (
                           <span>
-                            <span className="saleprice">${(shoe.price - (shoe.price * (shoe.sale * 0.01)))} </span>
-                            <span className="slashprice">${shoe.price}</span>
+                            <span className="cbsaleprice">${(shoe.price - (shoe.price * (shoe.sale * 0.01)))} </span>
+                            <span className="cbslashprice">${shoe.price}</span>
                           </span>
                         ) : `$${shoe.price}`}
                       </p>

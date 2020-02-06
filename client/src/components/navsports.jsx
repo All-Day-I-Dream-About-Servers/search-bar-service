@@ -8,15 +8,15 @@ class Navsports extends React.Component {
 
   render() {
     return(
-      <div className="expandedcontainer">
-        <div className="titlesports">
-          <a className="menulinkblack" href="#">SPORTS</a>
+      <div className="cbexpandedcontainer" onMouseLeave={() => this.props.hideNav()}>
+        <div className="cbtitlesports">
+          <a className="cbmenulinkblack" href="#">SPORTS</a>
         </div>
-        <div className="maincontainersports">
-          <div className="mainline">
-            <div className="column">
-              <h3 className="title">RUNNING</h3>
-              <img className="sportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/running.jpg"></img>
+        <div className="cbmaincontainersports">
+          <div className="cbmainline">
+            <div className="cbcolumn">
+              <h3 className="cbtitle">RUNNING</h3>
+              <img className="cbsportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/running.jpg"></img>
               <ul>
                 <li>Shoes</li>
                 <li>Clothing</li>
@@ -26,12 +26,12 @@ class Navsports extends React.Component {
                 <li>Alphabounce</li>
                 <li>Pulseboost</li>
                 <li><hr/></li>
-                <li className="bold" className="bold">All Running</li>
+                <li className="cbbold">All Running</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">SOCCER</h3>
-              <img className="sportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/soccer.jpg"></img>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">SOCCER</h3>
+              <img className="cbsportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/soccer.jpg"></img>
               <ul>
                 <li>Shoes</li>
                 <li>Clothing</li>
@@ -42,12 +42,12 @@ class Navsports extends React.Component {
                 <li>Nemeziz</li>
                 <li>Copa</li>
                 <li><hr/></li>
-                <li className="bold">All Soccer</li>
+                <li className="cbbold">All Soccer</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">OUTDOOR</h3>
-              <img className="sportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/outdoor.jpg"></img>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">OUTDOOR</h3>
+              <img className="cbsportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/outdoor.jpg"></img>
               <ul>
                 <li>Shoes</li>
                 <li>Clothing</li>
@@ -60,12 +60,12 @@ class Navsports extends React.Component {
                 <li>TERREX</li>
                 <li>adidas Five Ten</li>
                 <li><hr/></li>
-                <li className="bold">All Outdoor</li>
+                <li className="cbbold">All Outdoor</li>
               </ul>
             </div>
-            <div className="column">
-            <h3 className="title">BASKETBALL</h3>
-            <img className="sportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/basketball.jpg"></img>
+            <div className="cbcolumn">
+            <h3 className="cbtitle">BASKETBALL</h3>
+            <img className="cbsportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/basketball.jpg"></img>
               <ul>
                 <li>Shoes</li>
                 <li>Clothing</li>
@@ -75,12 +75,12 @@ class Navsports extends React.Component {
                 <li>Damian Lillard</li>
                 <li>Donovan Mitchell</li>
                 <li><hr /></li>
-                <li className="bold">All Basketball</li>
+                <li className="cbbold">All Basketball</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">FOOTBALL</h3>
-              <img className="sportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/football.jpg"></img>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">FOOTBALL</h3>
+              <img className="cbsportsicon" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/football.jpg"></img>
               <ul>
                 <li>Cleats</li>
                 <li>Clothing</li>
@@ -90,11 +90,11 @@ class Navsports extends React.Component {
                 <li>Freak Cleats</li>
                 <li>Adizero Cleats</li>
                 <li><hr /></li>
-                <li className="bold">All Football</li>
+                <li className="cbbold">All Football</li>
               </ul>
             </div>
-            <div className="column">
-              <h3 className="title">OTHER SPORTS</h3>
+            <div className="cbcolumn">
+              <h3 className="cbtitle">OTHER SPORTS</h3>
               <ul>
                 <li>Training</li>
                 <li>Snowboarding</li>
