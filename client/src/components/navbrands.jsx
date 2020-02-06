@@ -8,7 +8,7 @@ class Navbrands extends React.Component {
 
   render() {
     return(
-      <div className="cbexpandedcontainer">
+      <div className="cbexpandedcontainer" onMouseLeave={() => this.props.hideNav()}>
         <div className="cbtitlebrands">
           <a className="cbmenulinkblack" href="#">BRANDS</a>
         </div>

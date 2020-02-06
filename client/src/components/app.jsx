@@ -6,7 +6,7 @@ import Navkids from './navkids.jsx';
 import Navsports from './navsports.jsx';
 import Navbrands from './navbrands.jsx';
 
-class App extends React.Component {
+class SearchApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,14 +34,25 @@ class App extends React.Component {
   }
   // handles each navmenu show/hide
   showNav(navnum) {
+    for (var nav in this.state) {
+      if (this.state[nav] === true) {
+        this.setState({
+          [nav] : false
+        })
+      }
+    }
     this.setState({
       [navnum]: true
     });
   }
-  hideNav(navnum) {
-    this.setState({
-      [navnum]: false
-    })
+  hideNav() {
+    for (var nav in this.state) {
+      if (this.state[nav] === true) {
+        this.setState({
+          [nav] : false
+        })
+      }
+    }
   }
 
   render() {
@@ -53,19 +64,19 @@ class App extends React.Component {
           hideNav={this.hideNav}
           />
           {this.state.nav1 ? (
-            <Navmen />
+            <Navmen hideNav={this.hideNav} />
           ): null}
           {this.state.nav2 ? (
-            <Navwomen />
+            <Navwomen hideNav={this.hideNav} />
           ): null}
           {this.state.nav3 ? (
-            <Navkids />
+            <Navkids hideNav={this.hideNav} />
           ): null}
           {this.state.nav4 ? (
-            <Navsports />
+            <Navsports hideNav={this.hideNav} />
           ): null}
           {this.state.nav5 ? (
-            <Navbrands />
+            <Navbrands hideNav={this.hideNav} />
           ): null}
         </div>
       </div>
@@ -73,4 +84,4 @@ class App extends React.Component {
   };
 };
 
-export default App;
+export default SearchApp;

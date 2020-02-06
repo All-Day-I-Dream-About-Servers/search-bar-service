@@ -8,22 +8,29 @@ class Navbar extends React.Component {
       showcart: false,
     };
     this.showcart = this.showcart.bind(this);
+    this.hidecart = this.hidecart.bind(this);
   }
 
   showcart() {
     this.setState({
-      showcart: !this.state.showcart
+      showcart: true
+    });
+  }
+
+  hidecart() {
+    this.setState({
+      showcart: false
     });
   }
 
   render() {
     return(
       <nav className="cbnavbar">
-        <div className="cblogocontainer">
+        <div className="cblogocontainer" onMouseEnter={() => this.props.hideNav()}>
           <img className="cblogo" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/logosmall.png"></img>
         </div>
         <div className="cbmainmenu">
-          <div className="cbnavtop">
+          <div className="cbnavtop" onMouseEnter={() => this.props.hideNav()}>
             <div className="cbtoplinks">
               <a href="#">ALSO VISIT &nbsp;</a>
               <img className="cbreeboklogo" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/reebok.png"></img>
@@ -37,39 +44,31 @@ class Navbar extends React.Component {
             </div>
           </div>
           <div className="cbnavbottom">
-            <div className="cbmenulinkcontainer" 
-              onMouseEnter={() => this.props.showNav("nav1")} 
-              onMouseLeave={() => this.props.hideNav("nav1")}>
-              <a className="cbmenulink" href="#">MEN</a>
-            </div>
-            <div className="cbmenulinkcontainer" 
-              onMouseEnter={() => this.props.showNav("nav2")} 
-              onMouseLeave={() => this.props.hideNav("nav2")}>
-              <a className="cbmenulink" href="#">WOMEN</a>
-            </div>
-            <div className="cbmenulinkcontainer" 
-              onMouseEnter={() => this.props.showNav("nav3")} 
-              onMouseLeave={() => this.props.hideNav("nav3")}>
-              <a className="cbmenulink" href="#">KIDS</a>
-            </div>
-            <a className="cbline" href="#">| </a>
-            <div className="cbmenulinkcontainer" 
-              onMouseEnter={() => this.props.showNav("nav4")} 
-              onMouseLeave={() => this.props.hideNav("nav4")}>
-              <a className="cbmenulink" href="#">SPORTS</a>
-            </div>
-            <div className="cbmenulinkcontainer" 
-              onMouseEnter={() => this.props.showNav("nav5")} 
-              onMouseLeave={() => this.props.hideNav("nav5")}>
-              <a className="cbmenulink" href="#">BRANDS</a>
-            </div>
-            <a className="cbline" href="#">| </a>
-            <div className="cbmenulinkcontainer" >
-              <a className="cbrelease menulink" href="#">RELEASE DATES</a>
+            <div>
+              <div className="cbmenulinkcontainer" onMouseEnter={() => this.props.showNav("nav1")}>
+                <a className="cbmenulink" href="#">MEN</a>
+              </div>
+              <div className="cbmenulinkcontainer" onMouseEnter={() => this.props.showNav("nav2")}>
+                <a className="cbmenulink" href="#">WOMEN</a>
+              </div>
+              <div className="cbmenulinkcontainer" onMouseEnter={() => this.props.showNav("nav3")}>
+                <a className="cbmenulink" href="#">KIDS</a>
+              </div>
+              <a className="cbline" href="#">| </a>
+              <div className="cbmenulinkcontainer" onMouseEnter={() => this.props.showNav("nav4")}>
+                <a className="cbmenulink" href="#">SPORTS</a>
+              </div>
+              <div className="cbmenulinkcontainer" onMouseEnter={() => this.props.showNav("nav5")}>
+                <a className="cbmenulink" href="#">BRANDS</a>
+              </div>
+              <a className="cbline" href="#">| </a>
+              <div className="cbmenulinkcontainer" onMouseEnter={() => this.props.hideNav()}>
+                <a className="cbrelease menulink" href="#">RELEASE DATES</a>
+              </div>
             </div>
             <div className="cbmenusearch">
-              <Search />
-              <div onMouseEnter={() => this.showcart()} onMouseLeave={() => this.showcart()}>
+              <Search hidecart={() => this.hidecart()} />
+              <div onMouseEnter={() => this.showcart()} onMouseLeave={() => this.hidecart()}>
                 <a className="cbcartlink" href="#"><img className="cbshoppingcart" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/cart.png"></img></a>
               </div>
             </div>

@@ -21,6 +21,7 @@
   height: 56px;
 }
 .cblogo {
+  cursor: pointer;
   margin-left: 100px;
   max-width: 75px;
 }
@@ -43,13 +44,14 @@
 
 }
 .cbtoplinks {
+  cursor: pointer;
   margin-top: -5px;
   margin-left: 270px;
   font-size: 10px;
   font-weight: lighter;
 }
 .cbtoplinks a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   text-decoration: none;
   color: white;
   font-weight: lighter;
@@ -86,14 +88,16 @@
   margin-right: 5px;
 }
 .cbmenulinkcontainer:hover {
+  color: black;
   background-color:white;
 }
 .cbmenulink {
+  cursor: pointer;
   position: relative;
   text-decoration: none;
   color: white;
-  font-family: 'Maven Pro', sans-serif;
-  font-weight: 100;
+  font-family: 'Helvitica', 'Arial', sans-serif;
+  font-weight: lighter;
 }
 .cbmenulinkcontainer:hover .cbmenulink {
   color: black
@@ -101,12 +105,15 @@
 .cbrelease {
   text-decoration: none;
   color: white;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Helvitica', 'Arial', sans-serif;
   font-weight: 100;
+}
+.cbrelease:hover {
+  color:black;
 }
 .cbline {
   text-decoration: none;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Helvitica', 'Arial', sans-serif;
   color: white;
 }
 .cbmenusearch {
@@ -129,7 +136,7 @@
   background-repeat: no-repeat;
   background-size: 20px;
   text-indent: 30px;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
   border: none;
 }
 .cbsearchbar:focus {
@@ -216,7 +223,7 @@
 .cbmenulinkblack {
   text-decoration: none;
   color: black;
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Helvitica', 'Arial', sans-serif;
   font-weight: 100;
 }
 .cbmaincontainer {
@@ -272,8 +279,11 @@
   height: 95%;
   padding: 1% 0 0 0;
   border-bottom: 1px solid lightgrey;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: lighter;
+}
+.cbcolumn h3, ul li {
+  cursor: pointer;
 }
 .cbbrandicon {
   margin-bottom: 15px;
@@ -298,7 +308,7 @@
 .cbcolumn ul li {
   margin-bottom: 10px;
 }
-.column ul li:hover {
+.cbcolumn ul li:hover {
   text-decoration: underline;
 }
 .cbbottomline {
@@ -317,7 +327,7 @@
 .cbbottomtext {
   width: 170px;
   margin-left: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 13px;
   color: black;
   font-weight: bolder;
@@ -339,16 +349,17 @@
   box-shadow: 1px 13px 24px -15px rgb(145, 145, 145);
 }
 .cbshoedescription {
+  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   padding-left: 10px;
 }
 .cbresultsImage {
+  cursor: pointer;
   width: 90px;
   height: 90px;
 }
 .cbshoecategories {
-  /* letter-spacing: 0.8em; */
   color: grey;
 }
 .cbshoeName {
@@ -362,7 +373,7 @@
 }
 .cbresultsContainer p {
   vertical-align: top;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   overflow-wrap: normal;
 }
 .cbinner {
@@ -370,19 +381,24 @@
   height: 410px;
 }
 .cbinner h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: lighter;
 }
-.cbseeall {
+.cbseeAll {
   font-weight: bolder;
   vertical-align: bottom;
   text-decoration: underline;
+  color:black;
+  background-color:white;
+}
+.cbseeAll:hover {
+  color: white;
+  background-color: black;
 }
 .cbinnerright {
+  font-family: 'Helvetica', 'Arial', sans-serif;
   flex-shrink: 1;
   overflow-y: hidden;
-}
-.cbinnerright h2 {
-  letter-spacing: 0.1em;
 }
 .cbsaleprice {
   color: red;
@@ -399,10 +415,10 @@
   padding: 10px 20px 0 0;
 }
 .cbsuggestionsrow {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.8rem;
-  letter-spacing: -2px;
 }
 .cbsuggestions p:nth-child(2n) {
   color: grey;

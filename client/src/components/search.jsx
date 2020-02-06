@@ -20,7 +20,7 @@ export default class Search extends React.Component {
   }
   
   getShoes() {
-    Axios.get('/shoes')
+    Axios.get('http://localhost:3005/shoes')
       .then((list) => {
         this.setState({
           allShoes: list.data
@@ -59,6 +59,7 @@ export default class Search extends React.Component {
         }
       }
     }
+
     this.setState({
       results: newResults
     }, () => {
@@ -89,7 +90,7 @@ export default class Search extends React.Component {
 
   render() {
     return(
-      <div>
+      <div onMouseEnter={() => this.props.hidecart()}>
         <form className="cbsearchcontainer">
           <input type="search" name="name" className="cbsearchbar" placeholder="Search" onChange={this.onSearch}></input>
         </form>
@@ -135,7 +136,7 @@ export default class Search extends React.Component {
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
               </div>
-              <p className="cbseeall">SEE ALL "{this.state.name.toUpperCase()}"</p>
+              <p className="cbseeAll">SEE ALL "{this.state.name.toUpperCase()}"</p>
             </div>
             <div className="cbinner cbinnerright">
               <h2>Products</h2>
