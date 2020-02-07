@@ -125,6 +125,8 @@
 .cbsearchcontainer {
   text-align: right;
   margin-bottom: 8px;
+  position: relative;
+  z-index: 100;
 }
 .cbsearchbar {
   height: 33px;
@@ -370,6 +372,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.cbshoeName a {
+  text-decoration: none;
+  color: black;
 }
 .cbresultsContainer p {
   vertical-align: top;
