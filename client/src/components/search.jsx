@@ -149,7 +149,7 @@ export default class Search extends React.Component {
                         return <span className="cbshoecategories">{category} </span>
                       })}
                       </div> 
-                      <p className="cbshoeName"><a href={`http://localhost:3000/` + shoe.sku}>{shoe.name}</a></p>
+                      <p className="cbshoeName"><a href={`http://localhost:3000/` + (shoe.sku - 1)}>{shoe.name}</a></p>
                       <p className="cbshoeprice">
                         {shoe.sale > 0 ? (
                           <span>

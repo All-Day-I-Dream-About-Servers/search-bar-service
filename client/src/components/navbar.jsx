@@ -63,7 +63,7 @@ class Navbar extends React.Component {
               </div>
               <a className="cbline" href="#">| </a>
               <div className="cbmenulinkcontainer" onMouseEnter={() => this.props.hideNav()}>
-                <a className="cbrelease menulink" href="#">RELEASE DATES</a>
+                <a className="cbrelease cbmenulink" href="#">RELEASE DATES</a>
               </div>
             </div>
             <div className="cbmenusearch">

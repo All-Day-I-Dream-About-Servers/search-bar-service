@@ -104,7 +104,7 @@
   font-weight: lighter;
 }
 .cbmenulinkcontainer:hover .cbmenulink {
-  color: black
+  color: black;
 }
 .cbrelease {
   text-decoration: none;
@@ -112,9 +112,10 @@
   font-family: 'Helvitica', 'Arial', sans-serif;
   font-weight: 100;
 }
-.cbrelease:hover {
+/* .cbrelease:hover {
+  background-color: white;
   color:black;
-}
+} */
 .cbline {
   text-decoration: none;
   font-family: 'Helvitica', 'Arial', sans-serif;
