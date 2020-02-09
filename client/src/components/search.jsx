@@ -20,7 +20,7 @@ export default class Search extends React.Component {
   }
   
   getShoes() {
-    Axios.get('http://localhost:3005/shoes')
+    Axios.get('http://localhost:3005/')
       .then((list) => {
         this.setState({
           allShoes: list.data
@@ -136,7 +136,7 @@ export default class Search extends React.Component {
                   <p>{Math.floor(Math.random() * 20)}</p>
                 </div>
               </div>
-              <p className="cbseeAll">SEE ALL "{this.state.name.toUpperCase()}"</p>
+              <p className="cbseeAll"><span>SEE ALL "{this.state.name.toUpperCase()}"</span></p>
             </div>
             <div className="cbinner cbinnerright">
               <h2>Products</h2>
@@ -149,7 +149,7 @@ export default class Search extends React.Component {
                         return <span className="cbshoecategories">{category} </span>
                       })}
                       </div> 
-                      <p className="cbshoeName">{shoe.name}</p>
+                      <p className="cbshoeName"><a href={`http://localhost:3000/` + (shoe.sku - 1)}>{shoe.name}</a></p>
                       <p className="cbshoeprice">
                         {shoe.sale > 0 ? (
                           <span>

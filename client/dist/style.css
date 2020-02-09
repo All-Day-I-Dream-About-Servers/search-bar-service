@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
 }
+#Search {
+  position: absolute;
+  z-index: 200;
+}
 .cbnavBack {
   height: 56px;
   background-color: black;
@@ -100,7 +104,7 @@
   font-weight: lighter;
 }
 .cbmenulinkcontainer:hover .cbmenulink {
-  color: black
+  color: black;
 }
 .cbrelease {
   text-decoration: none;
@@ -108,9 +112,10 @@
   font-family: 'Helvitica', 'Arial', sans-serif;
   font-weight: 100;
 }
-.cbrelease:hover {
+/* .cbrelease:hover {
+  background-color: white;
   color:black;
-}
+} */
 .cbline {
   text-decoration: none;
   font-family: 'Helvitica', 'Arial', sans-serif;
@@ -125,6 +130,8 @@
 .cbsearchcontainer {
   text-align: right;
   margin-bottom: 8px;
+  position: relative;
+  z-index: 100;
 }
 .cbsearchbar {
   height: 33px;
@@ -371,6 +378,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.cbshoeName a {
+  text-decoration: none;
+  color: black;
+}
 .cbresultsContainer p {
   vertical-align: top;
   letter-spacing: 0.04em;
@@ -391,7 +402,7 @@
   color:black;
   background-color:white;
 }
-.cbseeAll:hover {
+.cbseeAll span:hover {
   color: white;
   background-color: black;
 }

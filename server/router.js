@@ -5,4 +5,8 @@ router
   .route('/')
   .get(controller.getAll)
 
+// router
+//   .route(`/:sku`)
+//   .get(controller.getOne)
+
 module.exports = router;

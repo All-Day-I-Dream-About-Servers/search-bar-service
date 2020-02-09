@@ -7,7 +7,7 @@
     "search-test": "jest",
     "search-build": "webpack -d --w",
     "search-seed": "node ./database/seeder.js",
-    "search-start": "nodemon server"
+    "start": "nodemon server"
   },
   "repository": {
     "type": "git",
