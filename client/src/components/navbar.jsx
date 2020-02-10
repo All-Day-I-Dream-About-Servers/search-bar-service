@@ -32,8 +32,9 @@ class Navbar extends React.Component {
         <div className="cbmainmenu">
           <div className="cbnavtop" onMouseEnter={() => this.props.hideNav()}>
             <div className="cbtoplinks">
-              <a href="#">ALSO VISIT &nbsp;</a>
+              <a className="cbvisit" href="#">ALSO VISIT &nbsp;
               <img className="cbreeboklogo" src="https://alldayidreamaboutservers.s3-us-west-1.amazonaws.com/reebok.png"></img>
+              </a>
               <span className="cbhelplinks"><a href="#">HELP &nbsp;| &nbsp;</a>
               <a href="#">ORDER TRACKER AND RETURNS &nbsp;|</a>
               <a className="cbjoin" href="#"> &nbsp;JOIN CREATORS CLUB &nbsp; </a>
