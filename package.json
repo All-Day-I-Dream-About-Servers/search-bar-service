@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "search bar module",
   "main": "server/index.js",
+  "engines": {
+    "node": "13.6"
+  },
   "scripts": {
     "search-test": "jest",
     "search-build": "webpack -d --w",
