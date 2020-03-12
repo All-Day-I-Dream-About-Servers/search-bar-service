@@ -1,6 +1,6 @@
 # Project
 
-> Review module for Adidas item page
+> Search Bar module for Adidas item page
 
 ## Related Projects
 
