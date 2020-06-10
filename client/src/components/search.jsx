@@ -20,7 +20,7 @@ export default class Search extends React.Component {
   }
   
   getShoes() {
-    Axios.get('http://localhost:3005/')
+    Axios.get('http://54.67.116.40')
       .then((list) => {
         this.setState({
           allShoes: list.data
@@ -149,7 +149,7 @@ export default class Search extends React.Component {
                         return <span className="cbshoecategories">{category} </span>
                       })}
                       </div> 
-                      <p className="cbshoeName"><a href={`http://localhost:3000/` + (shoe.sku)}>{shoe.name}</a></p>
+                      <p className="cbshoeName"><a href={`http://3.101.29.112/` + (shoe.sku)}>{shoe.name}</a></p>
                       <p className="cbshoeprice">
                         {shoe.sale > 0 ? (
                           <span>
